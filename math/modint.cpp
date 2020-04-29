@@ -1,6 +1,6 @@
 // -- BEGIN MODINT TEMPLATE --
 
-template<const int32_t MOD>
+template<const int MOD>
 struct ModInt {
 	long long x;
 	ModInt() : x(0) {}
