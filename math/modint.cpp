@@ -4,7 +4,8 @@ template<const int MOD>
 struct ModInt {
 	long long x;
 	ModInt() : x(0) {}
-	ModInt(long long u) : x(u) {}
+//	ModInt(long long u) : x(u) {}
+	ModInt(long long u) { u %= MOD; if(u < 0) u += MOD; x = u; }
 	ModInt& operator = (const ModInt &m) { x = m.x; return *this; }
 	friend bool operator == (const ModInt& a, const ModInt& b) { return a.x == b.x; }
 	friend bool operator != (const ModInt& a, const ModInt& b) { return a.x != b.x; }

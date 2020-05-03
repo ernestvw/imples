@@ -1,7 +1,7 @@
 /*
 	* ernestvw
 	* C++
-	* April 2020
+	* May 2020
 */
 
 #include <bits/stdc++.h>
@@ -32,6 +32,9 @@ using PQ = priority_queue<T, vector<T>, greater<T>>;
 const int oo = 1e9; // INT_MAX
 const long long OO = 1e18; // LLONG_MAX
 const double eps = 1e-9;
+const int p197 = 1000000007;
+const int p998 = 998244353;
+const int p103 = 1000003;
 
 #define TEST_CASES 0
 
@@ -50,6 +53,8 @@ signed main() {
 }
 
 // ---------------------------------------------------
+
+
 
 void solve(int test_case) {
 	
